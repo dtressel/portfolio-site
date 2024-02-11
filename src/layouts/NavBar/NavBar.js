@@ -32,7 +32,15 @@ function NavBar() {
         </div>
         {dropdownIsOpen &&
           <div className="dropdown-container">
-            dropdown
+            {links.map((link) => (
+              <div className="dropdown-link-container">
+                <Link
+                  className="dropdown-link"
+                  to={`/${link.toLowerCase().split(' ').join('-')}`}
+                  key={link}
+                >{link}</Link>
+              </div>
+            ))}
           </div>
         }
       </div>

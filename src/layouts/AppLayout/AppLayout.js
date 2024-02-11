@@ -5,13 +5,13 @@ import './AppLayout.css';
 
 const AppLayout = () => {
   return (
-    <>
+    <div className="page-container">
       <NavBar />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 

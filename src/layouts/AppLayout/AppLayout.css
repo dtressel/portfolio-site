@@ -4,3 +4,9 @@ main {
   flex-direction: column;
   padding-top: var(--navbar-height);
 }
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
