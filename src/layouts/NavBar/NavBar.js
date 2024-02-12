@@ -30,19 +30,15 @@ function NavBar() {
           ))}
           <MenuRoundedIcon className="hamburger-icon" onClick={hamburgerOnClick} />  
         </div>
-        {dropdownIsOpen &&
-          <div className="dropdown-container">
-            {links.map((link) => (
-              <div className="dropdown-link-container">
-                <Link
-                  className="dropdown-link"
-                  to={`/${link.toLowerCase().split(' ').join('-')}`}
-                  key={link}
-                >{link}</Link>
-              </div>
-            ))}
-          </div>
-        }
+        <div className='dropdown-container'>
+          {links.map((link) => (
+            <Link
+              className={`dropdown-link${dropdownIsOpen ? ' dropdown-link-show' : ''}`}
+              to={`/${link.toLowerCase().split(' ').join('-')}`}
+              key={link}
+            >{link}</Link>
+          ))}
+        </div>
       </div>
     </div>
   )
