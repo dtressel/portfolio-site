@@ -28,7 +28,12 @@ function NavBar() {
               key={link}
             >{link}</Link>
           ))}
-          <MenuRoundedIcon className="hamburger-icon" onClick={hamburgerOnClick} />  
+          <MenuRoundedIcon className="hamburger-icon" onClick={hamburgerOnClick} />
+          {/* <div className="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>  
+          </div>  */}
         </div>
         <div className='dropdown-container'>
           {links.map((link) => (

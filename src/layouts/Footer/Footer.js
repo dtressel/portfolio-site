@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="Footer-links"></div>
       <div className="Footer-social-links"></div>
       <div className="Footer-copyright">
-        <div>&copy; 2023 Daniel Tressel. All rights reserved.</div>
+        <div>&copy; 2024 Daniel Tressel</div>
       </div>
     </div>
   )
