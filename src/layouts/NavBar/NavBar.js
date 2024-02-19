@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './NavBar.css';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
-const links = ["My Story", "Experience", "Projects", "Contact"];
+const links = ["MY STORY", "EXPERIENCE", "PROJECTS", "CONTACT"];
 
 function NavBar() {
   const [dropdownIsOpen, setdropdownIsOpen] = useState(false);
@@ -18,7 +18,7 @@ function NavBar() {
           <Link
             className="navbar-link"
             to='/'
-          >Home</Link>
+          >HOME</Link>
         </div>
         <div className="navbar-right-side">
           {links.map((link) => (
