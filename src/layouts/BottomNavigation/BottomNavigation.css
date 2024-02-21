@@ -1,0 +1,25 @@
+.BottomNavigation-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+}
+
+.BottomNavigation-left, .BottomNavigation-right {
+  display: flex;
+  margin: 0 1rem;
+}
+
+.BottomNavigation-left {
+  justify-content: right;
+}
+
+.BottomNavigation-right {
+  justify-content: left;
+}
+
+.BottomNavigation-link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+}
