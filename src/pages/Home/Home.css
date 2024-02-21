@@ -1,0 +1,33 @@
+.Home-top-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Home-top-container img {
+  height: 764px;
+}
+
+.Home-left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / 2;
+}
+
+.Home-right-container {
+  display: flex;
+  justify-content: center;
+  grid-column: 2 / 3;
+}
+
+.Home-body-icon.MuiSvgIcon-root {
+  font-size: 3rem;
+  color: gray;
+  margin-right: 1.5rem;
+}
+
+@media (width < 800px) {
+  .Home-top-container {
+    display: block;
+  }
+}
