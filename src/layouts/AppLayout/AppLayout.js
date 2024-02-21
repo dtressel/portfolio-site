@@ -1,5 +1,6 @@
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+import BottomNavigation from "../BottomNavigation";
 import { Outlet } from "react-router-dom";
 import './AppLayout.css';
 
@@ -10,6 +11,7 @@ const AppLayout = () => {
       <main>
         <Outlet />
       </main>
+      <BottomNavigation />
       <Footer />
     </div>
   )
