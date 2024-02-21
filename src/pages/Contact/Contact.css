@@ -1,0 +1,44 @@
+.Contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.Contact-form-container {
+  background: gray;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 95vw;
+}
+
+.Contact-form-container h1 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.form-group > label {
+  display: block;
+}
+
+.Contact-form-input {
+  width: 30rem;
+  max-width: 100%;
+  padding: .6rem;
+  border-radius: .3rem;
+  border: none;
+  margin: .5rem 0 1rem;
+}
+
+.Contact-form-input:focus {
+  outline: none;
+}
+ 
+.Contact-form-input::placeholder {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Contact-form-submit-button {
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: none;
+}
