@@ -1,6 +1,9 @@
 .Home-top-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  flex-grow: 1;
+  width: 100%;
+  max-width: var(--navbar-content-width);
 }
 
 .Home-top-container img {
@@ -14,20 +17,45 @@
   grid-column: 1 / 2;
 }
 
-.Home-right-container {
-  display: flex;
-  justify-content: center;
-  grid-column: 2 / 3;
-}
-
 .Home-body-icon.MuiSvgIcon-root {
   font-size: 3rem;
   color: gray;
   margin-right: 1.5rem;
 }
 
+.Home-right-container {
+  display: flex;
+  justify-content: right;
+  grid-column: 2 / 3;
+  position: relative;
+}
+
+.Home-image-container {
+  position: absolute;
+  height: calc(100vh - var(--navbar-height));
+  overflow: hidden;
+}
+
+.Home-photo {
+  min-height: calc(100vh - var(--navbar-height));
+}
+
 @media (width < 800px) {
   .Home-top-container {
     display: block;
+  }
+  .Home-right-container {
+    justify-content: center;
+  }
+}
+
+@media (width < 1100px) {
+  .Home-image-container {
+    position: unset;
+    height: auto;
+    overflow: auto;
+  }
+  .Home-photo {
+    min-height: auto;
   }
 }

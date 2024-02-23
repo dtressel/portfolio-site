@@ -3,10 +3,13 @@ main {
   display: flex;
   flex-direction: column;
   padding-top: var(--navbar-height);
+  align-items: center;
 }
 
 .page-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: url("./../../assets/backgrounds/light-grey.jpg");
+  background-size: cover;
 }
