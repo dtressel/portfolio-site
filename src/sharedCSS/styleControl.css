@@ -11,7 +11,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
@@ -21,8 +20,19 @@ code {
 
 :root {
   --navbar-height: 5rem;
+  --navbar-content-width: 1200px;
 
   /* colors */
   --grey-blue: rgb(41, 62, 90);
   --grey-blue-gradient: linear-gradient(90deg, hsla(214, 37%, 26%, 1) 0%, hsla(227, 11%, 34%, 1) 100%);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }

@@ -7,11 +7,12 @@
   font-size: 1.1rem;
   letter-spacing: .15rem;
   font-weight: 450;
+  z-index: 1;
 }
 
 .navbar-content-container {
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--navbar-content-width);
   height: var(--navbar-height);
   display: grid;
   grid-template-columns: auto 1fr;
