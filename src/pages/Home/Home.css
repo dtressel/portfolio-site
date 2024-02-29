@@ -6,10 +6,6 @@
   max-width: var(--navbar-content-width);
 }
 
-.Home-top-container img {
-  height: 764px;
-}
-
 .Home-left-container {
   display: flex;
   justify-content: center;
@@ -37,7 +33,8 @@
 }
 
 .Home-photo {
-  min-height: calc(100vh - var(--navbar-height));
+  height: calc(100vh - var(--navbar-height));
+  max-height: 1000px;
 }
 
 @media (width < 800px) {
