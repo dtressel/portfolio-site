@@ -1,5 +1,15 @@
-.Footer > div {
+.Technologies-icon-wrapper {
   display: flex;
   justify-content: center;
-  margin: 0.3rem 0;
+  flex-wrap: wrap;
+  max-width: var(--navbar-content-width);
+}
+
+.Technologies-icon-wrapper > div {
+  text-align: center;
+  margin: 1rem .7rem;
+}
+
+.Technologies-icon {
+  height: 4rem;
 }
