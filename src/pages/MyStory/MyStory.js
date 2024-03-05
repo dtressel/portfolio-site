@@ -1,13 +1,15 @@
 import './MyStory.css';
+import celloPerforming from '../../assets/photos/Daniel-performing-cropped-small.png';
 
 const MyStory = () => {
   return (
     <div className="MyStory">
       <h1>My Story</h1>
+      <img src={celloPerforming} alt="Daniel performing on cello" className="MyStory-photo" />
       <p>
         From composing symphonies to crafting web applications, I've always been a creator at heart, crafting large-scale 
         architecture while managing fine details. From performing with world-class musicians to building software with other 
-        engineers, I'm accostomed to delivering high-quality products and performing under pressure.
+        engineers, I'm accustomed to collaborating, delivering high-quality products, and performing under pressure.
       </p>
       <p>
         Before I began my career as a Software Engineer, I worked for 15 years as a classical cellist and composer. I 

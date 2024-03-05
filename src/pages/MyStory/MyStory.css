@@ -1,3 +1,23 @@
 .MyStory {
   max-width: var(--navbar-content-width);
+  margin: 0 1rem;
+}
+
+.MyStory-photo {
+  float: right;
+  max-height: 30rem;
+  max-width: 100%;
+  margin-left: 2rem;
+  border-radius: .2rem;
+}
+
+@media (width < 700px) {
+  .MyStory-photo {
+    float: none;
+  }
+  .MyStory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
